@@ -13,4 +13,24 @@
  *= require_tree .
  *= require_self
  */
+ 
+ h2{
+ margin: 16.185px 0;  
+ }
+ 
+label {
+    display: block;
+}
 
+textarea {
+  padding: 2px;
+}
+
+.submit {
+  display: block;
+  margin-bottom: 10px;
+}
+
+input {
+  padding: 1px 6px;
+}
