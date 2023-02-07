@@ -8,9 +8,21 @@
   box-sizing: border-box;
 }
 
-h1 {
-  display: block;
-  font-size: 2em;
-  margin-block-start: 0.67em;
-  margin-block-end: 0.67em;
+body {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  margin: 33px;
+}
+
+p {
+  font-size: 13px;
+  line-height: 18px;
+  margin: 33px;
+}
+
+.list-link {
+  font-size: 13px;
+  line-height: 18px;
+  margin: 33px;
 }
