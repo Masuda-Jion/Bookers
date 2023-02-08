@@ -13,13 +13,39 @@
  *= require_tree .
  *= require_self
  */
- 
- h2{
- margin: 16.185px 0;  
- }
- 
+
+.list-title {
+  display: flex;
+  padding: 15px 80px;
+}
+
+.list-title-body {
+  padding-left: 280px;
+}
+
+.list-info {
+  position: relative;
+}
+
+.list-body-info {
+  position: absolute;
+  left: 220px;
+}
+
+h2{
+  margin: 16.185px 0;
+}
+
 label {
-    display: block;
+  display: block;
+}
+
+.text-field {
+  margin-bottom: 10px;
+}
+
+.text-area {
+  margin-bottom: 10px;
 }
 
 textarea {
