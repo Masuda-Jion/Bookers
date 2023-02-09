@@ -23,6 +23,11 @@
   padding-left: 280px;
 }
 
+.list {
+  display: flex;
+  padding-bottom: 7px;
+}
+
 .list-info {
   position: relative;
 }
@@ -57,6 +62,54 @@ textarea {
   margin-bottom: 10px;
 }
 
+.errors {
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
 input {
   padding: 1px 6px;
+}
+
+.button {
+  position: absolute;
+  left: 600px;
+}
+
+a {
+  padding: 0 2px;
+}
+
+.flash {
+  margin-bottom: 33px;
+  margin-left: 35px;
+}
+
+.show {
+  margin-left: 35px;
+}
+
+.show-title {
+  display: flex;
+}
+
+.show-name {
+  margin-right: 5px;
+}
+
+.show-body {
+  display: flex;
+  margin: 25px 0;
+}
+
+.show-bottun {
+  display: flex;
+}
+
+.edit {
+  margin-bottom: 15px;
+}
+
+.edit-bottun {
+  display: flex;
 }

@@ -6,15 +6,33 @@
 </div>
 
 <% @books.each do |book|%>
-    <div class="list-info">
-      <span><%= book.title %></span>
-      <span class="list-body-info"><%= book.body %></span>
+    <div class="list">
+      <div class="list-info">
+        <span><%= book.title %></span>
+        <span class="list-body-info"><%= book.body %></span>
+      </div>
+      <div class= "button">
+        <%= link_to "Show", book_path(book.id) %>
+        <%= link_to "Edit", edit_book_path(book.id) %>
+        <%= link_to "Destroy", book_path(book.id), method: :delete, "data-confirm" => "本当に削除しますか？" %>
+      </div>
     </div>
 <% end %>
 
-<%= link_to "削除", destroy_book_path(@book.id), method: :delete, "data-confirm" => "本当に削除しますか？" %>
+
 
 <h2>New book</h2>
+
+<div class="errors">
+  <% if @book.errors.any? %>
+    <%= @book.errors.count %> errors prohibited this book from being saved:
+    <ul>
+      <% @book.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+    </ul>
+  <% end %>
+</div>
 
 <%= form_with model: @book do |f| %>
   <div class="new-book">
