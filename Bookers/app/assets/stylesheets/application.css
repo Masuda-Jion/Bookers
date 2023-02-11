@@ -14,27 +14,24 @@
  *= require_self
  */
 
-.list-title {
-  display: flex;
-  padding: 15px 80px;
+th {
+  padding-top: 15px;
+  padding-left: 80px;
+  padding-bottom: 5px;
 }
 
-.list-title-body {
-  padding-left: 280px;
+.index-body {
+  padding-left: 140px;
 }
 
-.list {
-  display: flex;
-  padding-bottom: 7px;
+.book-body {
+  padding-left: 60px;
+  padding-right: 280px;
 }
 
-.list-info {
-  position: relative;
-}
-
-.list-body-info {
-  position: absolute;
-  left: 220px;
+td {
+  padding-left: 8px;
+  padding-bottom: 5px;
 }
 
 h2{
